@@ -17,6 +17,7 @@ public class MainController {
         list.add("/v2/report");
         list.add("/v3/report");
         list.add("/v4/report");
+        list.add("/v5/report");
 
         StringBuilder html = new StringBuilder("Reports");
         html.append("<ul>");
