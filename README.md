@@ -10,3 +10,6 @@
 
 ## V3 - /v3/report
 - Uses query and data from report
+
+## V4 - /v4/report
+- Uses query and data from java application
