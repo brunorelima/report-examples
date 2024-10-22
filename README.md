@@ -7,3 +7,6 @@
 - Generate a pdf report sending a static parameter
 - Send static list variables to details
 - Has static option to open or download the pdf
+
+## V3 - /v3/report
+- Uses query and data from report

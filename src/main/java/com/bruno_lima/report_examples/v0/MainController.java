@@ -14,6 +14,8 @@ public class MainController {
     public String index() {
         List<String> list = new ArrayList<>();
         list.add("/v1/report");
+        list.add("/v2/report");
+        list.add("/v3/report");
 
         StringBuilder html = new StringBuilder("Reports");
         html.append("<ul>");
