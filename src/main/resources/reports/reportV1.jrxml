@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="99778a6f-da7d-4401-98e6-265f37520355">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="author" class="java.lang.String">
+		<defaultValueExpression><![CDATA["empty"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="122" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="550" height="30" uuid="31a28873-b9ca-49b9-ab66-296881958dd8"/>
+				<textElement textAlignment="Center">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Report Example 1]]></text>
+			</staticText>
+			<textField pattern="d/M/yyyy h:mm a">
+				<reportElement x="0" y="50" width="550" height="20" uuid="f06a681e-ba4a-4349-9605-b6fc48419175"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="79" width="550" height="30" uuid="187f6c85-187c-4581-9209-975e55e4b631"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["Author: " + $P{author}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
